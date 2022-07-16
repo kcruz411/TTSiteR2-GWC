@@ -1,0 +1,137 @@
+
+html {
+  height: 100%;
+	font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient( to bottom,#def9f4, #fbf9e3,#fdf5eb,#e8f7fc);
+  background-repeat: no repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+    background-color: #bd32a4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    background-color:	#bd32a4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #be8eaf;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #e297cc;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+
+/* about me page*/
+
+
+.box {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 700px;
+  height: 700px;
+}
+
+
+
+.box img {
+  animation: fade 4s;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.box .overbox {
+  background-color: #661457;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 0;
+    height: 1000px;
+    padding: 200px 100px;
+}
+
+.box:hover .overbox { opacity: 1; }
+
+.box .overtext {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(40px);
+  -webkit-transform: translateY(40px);
+}
+
+.box .title {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .title,
+.box:focus .title {
+  opacity: 1;
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+}
+
+.box .tagline {
+  font-size: 0.8em;
+  opacity: 0;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.box:hover .tagline,
+.box:focus .tagline {
+  opacity: 1;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}

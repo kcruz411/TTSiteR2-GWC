@@ -1,0 +1,66 @@
+.fade {
+  margin: 50px;
+  padding: 50px;
+  opacity: 1;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
+  color: darkslategray;
+}
+
+h4{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 30px;
+}
+
+img {
+  width: 45%;
+  animation: fade 4s ;
+  vertical-align: middle;
+  
+}
+@keyframes fade{
+  0%{ opacity:0;}
+  100%{opacity:1;}
+}
+
+html {
+  height: 100%;
+	font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient( to bottom,#def9f4, #fbf9e3,#fdf5eb,#e8f7fc);
+  background-repeat: no repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+    background-color: #bd32a4;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    background-color:	#bd32a4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #be8eaf;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #e297cc;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
